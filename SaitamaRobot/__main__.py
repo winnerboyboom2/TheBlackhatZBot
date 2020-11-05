@@ -53,13 +53,13 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I'm The Official Group Managing Bot Of The BlackHatZ Network! 
+I'm The Official Group Managing Bot Of THE BOOM! 
 I specialise in managing all types of discussion groups. 
 You can find my list of available commands with /help
 """
 
 HELP_STRINGS = """
-I'm The Official Group Managing Bot Of The BlackHatZ Network! 
+I'm The Official Group Managing Bot Of The BOOM! 
 I specialise in managing all types of discussion groups. 
 You can find my list of available commands with /help
 
@@ -200,17 +200,17 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add BlackhatZ Manager to your group",
-                            url="t.me/{}?startgroup=true".format(
+                            text="☑️ Add BOOM Manager to your group",
+                            url="t.me/boom_mangager_bot?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
                              text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/hoiboombam"),
                          InlineKeyboardButton(
                              text="🔔 Updates Channel",
-                             url="https://t.me/TheBlackHatZFederation")
+                             url="https://t.me/hoiboombam")
                      ],
                      [
                          InlineKeyboardButton(
@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🗄 Source code",
-                             url="https://github.com/sohag02/TheBlackhatZBot")
+                             url="https://github.com/sohag02/saitamaRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -327,7 +327,7 @@ def get_help(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="Help",
-                        url="t.me/{}?start=ghelp_{}".format(
+                        url="t.me/boom_manager_bot?start=ghelp_boom_manager_bot".format(
                             context.bot.username, module))
                 ]]))
             return
@@ -336,7 +336,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                     text="Help",
-                    url="t.me/{}?start=help".format(context.bot.username))
+                    url="t.me/boom_manager_bot?start=help".format(context.bot.username))
             ]]))
         return
 
